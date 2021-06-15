@@ -34,13 +34,6 @@ public class Delivery {
         this.customer = customer;
         this.deliveryTime = deliveryTime;
         this.setDistance();
-        //update total distance of the driver
-//        driver.setTotalDistance(this.distance);
-
-//        driver.setIsFree(false);
-//        Driver d = this.getDriver();
-//        d.setTotalDistance(this.distance);
-//        d.setIsFree(false);
     }
 
     //For Test
@@ -92,7 +85,7 @@ public class Delivery {
         return distance;
     }
 
-    //For Test
+    //For Test - NO random
     public void setDistance(Long dis){
         this.distance = dis;
     }
@@ -104,9 +97,5 @@ public class Delivery {
         this.distance = (long) randomGenerator.nextInt(20);
         System.out.println(this.distance);
 
-//        long leftLimit = 0L;
-//        long rightLimit = 20L;
-//        long generatedLong = leftLimit + (long) (Math.random() * (rightLimit - leftLimit));
-//        this.distance = generatedLong;
     }
 }

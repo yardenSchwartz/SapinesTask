@@ -98,12 +98,6 @@ public class WaltTest {
         Restaurant mexican = new Restaurant("restaurant", tlv, "mexican restaurant ");
 
         restaurantRepository.saveAll(Lists.newArrayList(meat, vegan, cafe, chinese, mexican));
-//        Restaurant r = restaurantRepository.findByName("vegan");
-//        r.setName("vegeterian");
-//        Restaurant rnew = restaurantRepository.save(r);
-//        List<Restaurant> restaurants = (List<Restaurant>) restaurantRepository.findAll();
-//        int x=5;
-//        int y= x;
     }
 
     private void createCustomers(City jerusalem, City tlv, City haifa, City bash) {
